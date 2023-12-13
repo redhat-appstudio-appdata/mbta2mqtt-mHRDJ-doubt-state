@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: mbta2mqtt
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/mattdm-tenant/mbta2mqtt/mbta2mqtt@sha256:6ee11de8fd4f3fbc8063c91c2aa6422edd0a97972a43daba7c11ac320e709a57
+        name: container-image
+        resources: {}
+status: {}

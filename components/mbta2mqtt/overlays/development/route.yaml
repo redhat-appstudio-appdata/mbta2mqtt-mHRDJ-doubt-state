@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: mbta2mqtt
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: mbta2mqtt
+    app.kubernetes.io/part-of: mbta2mqtt
+  name: mbta2mqttb4i2
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: mbta2mqtt
+    weight: 100
+status: {}
