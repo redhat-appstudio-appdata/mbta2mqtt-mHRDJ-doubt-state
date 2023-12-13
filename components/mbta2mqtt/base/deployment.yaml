@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: mbta2mqtt
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/mattdm-tenant/mbta2mqtt/mbta2mqtt@sha256:6ee11de8fd4f3fbc8063c91c2aa6422edd0a97972a43daba7c11ac320e709a57
+      - image: quay.io/redhat-user-workloads/mattdm-tenant/mbta2mqtt/mbta2mqtt@sha256:5f45a332cd3027450bf411057ea80e11d8775fd59ff5fb50ebf06d727542439d
         imagePullPolicy: Always
         name: container-image
         ports:
