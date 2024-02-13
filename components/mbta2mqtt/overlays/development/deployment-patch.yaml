@@ -4,7 +4,6 @@ metadata:
   creationTimestamp: null
   name: mbta2mqtt
 spec:
-  replicas: 1
   selector: {}
   strategy: {}
   template:
